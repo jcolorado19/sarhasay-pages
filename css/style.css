@@ -1,0 +1,94 @@
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  display: flex;
+  flex-flow: column; }
+
+.jugador {
+  height: 15vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  box-sizing: border-box;
+  color: #6ab04c;
+  font-size: 1.5em; }
+
+.juego {
+  background-color: #dedede;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .juego_gameboard {
+    height: 85vh;
+    width: 100vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 60vh;
+    max-width: 60vh; }
+    .juego_gameboard .color {
+      width: 50%;
+      height: 50%;
+      display: inline-block;
+      transition: .5s; }
+    .juego_gameboard .hover {
+      animation: mostrar .5s; }
+    .juego_gameboard .left {
+      float: left; }
+    .juego_gameboard .right {
+      float: right; }
+    .juego_gameboard .celeste {
+      background-color: #22a6b3; }
+    .juego_gameboard .celeste.light {
+      background-color: #7ed6df; }
+    .juego_gameboard .violeta {
+      background-color: #be2edd; }
+    .juego_gameboard .violeta.light {
+      background-color: #e056fd; }
+    .juego_gameboard .naranja {
+      background-color: #f0932b; }
+    .juego_gameboard .naranja.light {
+      background-color: #ffbe76; }
+    .juego_gameboard .verde {
+      background-color: #6ab04c; }
+    .juego_gameboard .verde.light {
+      background-color: #badc58; }
+    .juego_gameboard .btn-start {
+      cursor: pointer;
+      width: 400px;
+      height: 100px;
+      background-color: #ecf0f1;
+      color: #2c3e50;
+      border: none;
+      border-bottom: 4px solid #c4c6c7;
+      border-radius: 8px;
+      font-size: 2.5rem;
+      position: absolute;
+      top: calc(50% - 10px);
+      left: calc(50% - 200px);
+      transition: .10s;
+      outline: none; }
+      .juego_gameboard .btn-start:hover {
+        color: #ecf0f1;
+        background-color: #2c3e50;
+        border-bottom: 4px solid #1f3346; }
+      .juego_gameboard .btn-start:active {
+        transform: scale(0.9); }
+
+.hide {
+  display: none; }
+
+@keyframes mostrar {
+  0% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+
+
+/*# sourceMappingURL=style.css.map*/
